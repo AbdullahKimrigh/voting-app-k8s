@@ -15,7 +15,7 @@ spec:
         app: postgres
     spec:
       containers:
-      - image: postgres:latest
+      - image: postgres:9.4
         name: postgres
         env:
         - name: POSTGRES_USER
