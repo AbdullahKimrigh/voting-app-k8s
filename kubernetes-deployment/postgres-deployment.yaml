@@ -27,8 +27,8 @@ spec:
           name: postgres
         volumeMounts:
         - mountPath: /var/lib/postgresql/data
-          name: pv-db
+          name: pv-ebs-db
       volumes:
-      - name: pv-db
+      - name: pv-ebs-db
         persistentVolumeClaim:
-          claimName: pvc-db
+          claimName: pvc-ebs-db
