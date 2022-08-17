@@ -20,3 +20,10 @@ spec:
         ports:
         - containerPort: 6379
           name: redis
+        volumeMounts:
+        - mountPath: /var/lib/redis/data
+          name: PV-db
+      volumes:
+      - name: PV-db
+        persistentVolumeClaim:
+          claimName: PVC-db
