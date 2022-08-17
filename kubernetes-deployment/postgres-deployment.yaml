@@ -32,3 +32,6 @@ spec:
       - name: pv-ebs-db
         persistentVolumeClaim:
           claimName: pvc-ebs-db
+        awsElasticBlockStore:
+          volumeID: vol-0fa9bfe3f29d6fe31
+          fsType: ext4
