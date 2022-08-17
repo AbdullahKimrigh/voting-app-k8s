@@ -10,8 +10,6 @@ spec:
     storage: 2Gi
   accessModes:
     - ReadWriteMany
-  hostPath:
-    path: "/tmp/data"
   awsElasticBlockStore:
     volumeID: vol-0fa9bfe3f29d6fe31
     fsType: ext4
