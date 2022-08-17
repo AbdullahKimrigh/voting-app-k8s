@@ -3,7 +3,7 @@ kind: PersistentVolumeClaim
 metadata:
   labels:
     app: db
-  name: PVC-db
+  name: pvc-db
 spec:
   storageClassName: voting-db
   accessModes:

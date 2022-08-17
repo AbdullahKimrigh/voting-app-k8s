@@ -22,8 +22,8 @@ spec:
           name: redis
         volumeMounts:
         - mountPath: /var/lib/redis/data
-          name: PV-db
+          name: pv-db
       volumes:
-      - name: PV-db
+      - name: pv-db
         persistentVolumeClaim:
-          claimName: PVC-db
+          claimName: pvc-db
